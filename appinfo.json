@@ -4,19 +4,13 @@
         ""
     ],
     "companyName": "thomas@thomasbickley.co.uk",
-    "longName": "Matt is Watching... Always Watching",
+    "longName": "FaceTest",
     "projectType": "native",
     "resources": {
         "media": [
             {
-                "file": "images/icon.png",
-                "menuIcon": true,
-                "name": "ICON",
-                "type": "png"
-            },
-            {
-                "file": "images/background_night.png",
-                "name": "BG_NIGHT",
+                "file": "images/background_morning.png",
+                "name": "BG_MORNING",
                 "type": "png"
             },
             {
@@ -30,23 +24,28 @@
                 "type": "png"
             },
             {
-                "file": "images/face.png",
-                "name": "FACE",
+                "file": "images/background_night.png",
+                "name": "BG_NIGHT",
                 "type": "png"
             },
             {
-                "file": "images/background_morning.png",
-                "name": "BG_MORNING",
+                "file": "images/icon.png",
+                "name": "ICON",
+                "type": "png"
+            },
+            {
+                "file": "images/face.png",
+                "name": "FACE",
                 "type": "png"
             }
         ]
     },
     "sdkVersion": "3",
-    "shortName": "Matt Watch",
+    "shortName": "FaceTest",
     "targetPlatforms": [
         "basalt"
     ],
-    "uuid": "0ddf59cc-c050-46b4-ba25-2c043e7d5b18",
+    "uuid": "445b0612-b008-4a63-8288-cf4ed55c8c58",
     "versionLabel": "1.0",
     "watchapp": {
         "watchface": true
