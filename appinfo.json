@@ -9,34 +9,34 @@
     "resources": {
         "media": [
             {
-                "file": "images/background_morning.png",
-                "name": "BG_MORNING",
+                "file": "images/face_pic.png",
+                "name": "FACE",
                 "type": "png"
             },
             {
-                "file": "images/background_evening.png",
-                "name": "BG_EVENING",
-                "type": "png"
-            },
-            {
-                "file": "images/background_noon.png",
+                "file": "images/background_noon_pal.png",
                 "name": "BG_NOON",
                 "type": "png"
             },
             {
-                "file": "images/background_night.png",
+                "file": "images/background_night_pal.png",
                 "name": "BG_NIGHT",
+                "type": "png"
+            },
+            {
+                "file": "images/background_morning_pal.png",
+                "name": "BG_MORNING",
+                "type": "png"
+            },
+            {
+                "file": "images/background_evening_pal.png",
+                "name": "BG_EVENING",
                 "type": "png"
             },
             {
                 "file": "images/icon.png",
                 "menuIcon": true,
                 "name": "ICON",
-                "type": "png"
-            },
-            {
-                "file": "images/face.png",
-                "name": "FACE",
                 "type": "png"
             }
         ]

@@ -32,6 +32,7 @@ static void update_time(struct tm *tick_time, TimeUnits units_changed) {
   if (units_changed >= HOUR_UNIT) {
     update_background(s_time.tm_hour);
   }
+  layer_mark_dirty(s_hands_layer);
 }
 
 static void init_time() {
@@ -88,7 +89,7 @@ static void main_window_load(Window *window) {
   // Face
   s_face_bitmap = gbitmap_create_with_resource(RESOURCE_ID_FACE);
   
-  s_face_layer = bitmap_layer_create(GRect(0, 0, 144, 168));
+  s_face_layer = bitmap_layer_create(GRect(25, 17, 94, 131));
   bitmap_layer_set_bitmap(s_face_layer, s_face_bitmap);
   bitmap_layer_set_compositing_mode(s_face_layer, GCompOpSet);
   
@@ -119,6 +120,9 @@ static void init() {
 
   // Show the Window on the watch, with animated=true
   window_stack_push(s_main_window, true);
+  
+  tick_timer_service_unsubscribe();
+  tick_timer_service_subscribe(MINUTE_UNIT, update_time);
       
   init_time();
 }
