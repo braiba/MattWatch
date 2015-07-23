@@ -1,0 +1,54 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "thomas@thomasbickley.co.uk",
+    "longName": "Matt is Watching... Always Watching",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/icon.png",
+                "menuIcon": true,
+                "name": "ICON",
+                "type": "png"
+            },
+            {
+                "file": "images/background_night.png",
+                "name": "BG_NIGHT",
+                "type": "png"
+            },
+            {
+                "file": "images/background_evening.png",
+                "name": "BG_EVENING",
+                "type": "png"
+            },
+            {
+                "file": "images/background_noon.png",
+                "name": "BG_NOON",
+                "type": "png"
+            },
+            {
+                "file": "images/face.png",
+                "name": "FACE",
+                "type": "png"
+            },
+            {
+                "file": "images/background_morning.png",
+                "name": "BG_MORNING",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "Matt Watch",
+    "targetPlatforms": [
+        "basalt"
+    ],
+    "uuid": "0ddf59cc-c050-46b4-ba25-2c043e7d5b18",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
