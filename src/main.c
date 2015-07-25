@@ -132,9 +132,9 @@ static void draw_hand(float angle, int stroke, int length, GContext *ctx) {
 static void draw_hands(Layer *layer, GContext *ctx) {  
   float second_angle = TRIG_MAX_ANGLE * s_time.tm_sec / 60;
   float minute_angle = TRIG_MAX_ANGLE * s_time.tm_min / 60;
-  // minute_angle += (s_time.tm_sec / 60) * (TRIG_MAX_ANGLE / 60);
+  minute_angle += (s_time.tm_sec / 60) * (TRIG_MAX_ANGLE / 60);
   float hour_angle = TRIG_MAX_ANGLE * (s_time.tm_hour > 12 ? s_time.tm_hour - 12 : s_time.tm_hour) / 12;
-  // hour_angle += (s_time.tm_min / 60) * (TRIG_MAX_ANGLE / 12);
+  hour_angle += (s_time.tm_min / 60) * (TRIG_MAX_ANGLE / 12);
   
   APP_LOG(APP_LOG_LEVEL_INFO, "second (%d => %d)", s_time.tm_sec, (int) second_angle);
   APP_LOG(APP_LOG_LEVEL_INFO, "minute (%d => %d)", s_time.tm_min, (int) minute_angle);
