@@ -9,13 +9,18 @@
     "resources": {
         "media": [
             {
-                "file": "images/face_pic.png",
-                "name": "FACE",
-                "type": "png"
+                "file": "data/face_half.png",
+                "name": "FACE_SPIN",
+                "type": "raw"
             },
             {
                 "file": "images/background_noon_pal.png",
                 "name": "BG_NOON",
+                "type": "png"
+            },
+            {
+                "file": "images/face_pic.png",
+                "name": "FACE",
                 "type": "png"
             },
             {
